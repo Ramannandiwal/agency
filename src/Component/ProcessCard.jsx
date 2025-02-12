@@ -7,7 +7,7 @@ const ProcessCard = ({ number = 1, title = "Request Call" ,Icon=FaMobile }) => {
       {/* Circle Container */}
       <div className="relative flex items-center justify-center bg-white border-4 border-gray-300 shadow-lg h-36 w-36 sm:h-40 sm:w-40 rounded-full">
         {/* Number Badge */}
-        <div className=" text-black absolute top-[-10px] sm:top-[-15px] left-1/2 transform -translate-x-1/2 bg-yellow-500  font-bold text-lg sm:text-xl w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full shadow-md">
+        <div className=" text-black absolute top-[-20px] sm:top-[-20x] left-1/2 transform -translate-x-1/2 bg-yellow-500  font-bold text-lg sm:text-xl w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full shadow-md">
           {number}
         </div>
 
