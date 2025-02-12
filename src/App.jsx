@@ -8,6 +8,9 @@ import { FcOnlineSupport } from "react-icons/fc";
 import ServiceCard from "./Component/ServiceCard";
 import ProcessCard from "./Component/ProcessCard";
 import { FaBarsProgress, FaMessage, FaPencil } from "react-icons/fa6";
+import FeedbackCard from "./Component/FeedbackCard";
+import SkillsSection from "./Component/SkillSection";
+import Footer from "./Component/Footer";
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -131,7 +134,7 @@ const App = () => {
           ))}
         </div>
       </div>
-      <div className=" bg-white h-[60vh] flex flex-col">
+      <div className=" bg-white p-3 flex flex-col">
       <div className="text-center p-4">
           <h1 className="font-bold text-black text-4xl md:text-6xl">OUR <span className="text-[#668e18]">PROCESS</span></h1>
         </div>
@@ -151,6 +154,73 @@ const App = () => {
         <ProcessCard number={6} title="Deliver" Icon={FaBox}/>
         </div>
       </div>
+      <div className="  bg-[#f2f2f2] p-3 ">
+      <div className="text-center p-4">
+          <h1 className="font-bold text-black text-4xl md:text-6xl">PEOPLE <span className="text-[#668e18]">ABOUT US</span></h1>
+        </div>
+        <p className="  p-4 text-center text-xs px-4 sm:px-10 md:px-16 text-black lg:px-32">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam nemo neque eligendi, doloremque quam repellendus. Reprehenderit expedita neque repellat et!
+        </p>
+        <div className=" flex flex-wrap space-x-4 space-y-4">
+          <FeedbackCard title="John DOe"/>
+          <FeedbackCard title="John DOe"/>
+          <FeedbackCard title="John DOe"/>
+          <FeedbackCard title="John DOe"/>
+        </div>
+      </div>
+     <div>
+      <SkillsSection/>
+     </div>
+     
+    <div className="py-12 px-4 flex flex-col justify-center items-center bg-[#8ec63f]">
+      {/* Heading */}
+      <h1 className="text-center text-white font-bold text-3xl sm:text-4xl md:text-5xl">
+        START YOUR NEW PROJECT
+      </h1>
+
+      {/* Input Fields */}
+      <div className="mt-6 w-full flex flex-col sm:flex-row justify-center items-center gap-4">
+        <input
+          className="p-3 w-full sm:w-60 rounded-lg border-none focus:outline-none shadow-md"
+          placeholder="Your Name"
+        />
+        <input
+          className="p-3 w-full sm:w-60 rounded-lg border-none focus:outline-none shadow-md"
+          placeholder="Your Email"
+        />
+        <input
+          className="p-3 w-full sm:w-60 rounded-lg border-none focus:outline-none shadow-md"
+          placeholder="Your Project"
+        />
+        <button className="py-3 px-6 font-bold text-lg bg-yellow-500 text-black rounded-lg shadow-lg hover:bg-yellow-600 transition-all">
+          Send Request
+        </button>
+      </div>
+
+      {/* Description */}
+      <div className="text-white text-center mt-6 max-w-3xl text-sm sm:text-base leading-relaxed px-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nemo eos deserunt quaerat illo doloremque consequuntur hic odit praesentium magnam.
+        <br className="hidden sm:block" />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sit nesciunt delectus deserunt earum placeat dolorem consectetur sunt a harum!
+      </div>
+    </div>
+    <div className=" bg-white flex flex-col justify-center items-center" >
+    <div className="text-center p-4 bg-white">
+          <h1 className="font-bold text-black text-4xl md:text-6xl">OUR <span className="text-[#668e18]">CONTACTS</span></h1>
+        </div>
+        <p className="  p-4 text-center text-xs px-4 sm:px-10 md:px-16 text-black lg:px-32">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+(123) 456-78-90
+(123) 456-78-90
+info@website.com
+        </p>
+        <div>
+          <img src="/public/CONTACTTS.png" alt="" />
+        </div>
+    </div>
+    <Footer/>
+
     </div>
   );
 };

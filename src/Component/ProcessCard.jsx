@@ -24,6 +24,7 @@ const ProcessCard = ({ number = 1, title = "Request Call" ,Icon=FaMobile }) => {
       <p className="text-gray-600 text-sm sm:text-base px-4 sm:px-6 mt-2 leading-relaxed">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, magnam!
       </p>
+      
     </div>
   );
 };
